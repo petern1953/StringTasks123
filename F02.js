@@ -13,6 +13,6 @@ const user = {
 const taggedCode = (texts, ...values) =>
     texts.map((text, index) =>
         `<em>${text}</em>${values[index] ? `<strong>${values[index]}</strong>` : ``}`
-    ).join();
+    ).join('');
 
 document.body.innerHTML = taggedCode`My name is ${user.firstName} ${user.lastName}. I'm ${user.age} years old.`;

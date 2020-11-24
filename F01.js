@@ -63,3 +63,6 @@ console.log(val(johnDoe, janeDoe));
 // const val2 = val(johnDoe, janeDoe).map((objItem, idx) => this.idx = objItem)
 // const val3 = { ...val2 }
 // console.log(val3)
+
+const merge = (...objects) => ({ ...objects });
+console.log('merge: ', merge(johnDoe, janeDoe));
